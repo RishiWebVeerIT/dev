@@ -9,4 +9,9 @@ class OtherTaxDetail extends Model
 {
     use HasFactory;
     protected $table ="other_tax_details";
+
+    protected $casts = [
+        'created_by' => 'object',
+        'updated_by' => 'object',
+    ];
 }
